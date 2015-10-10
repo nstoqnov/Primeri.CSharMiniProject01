@@ -1,0 +1,4 @@
+E:\Aula\primeri.csharp.miniproject01\MP01\About\bin\Debug\About.dll
+E:\Aula\primeri.csharp.miniproject01\MP01\About\bin\Debug\About.pdb
+E:\Aula\primeri.csharp.miniproject01\MP01\About\obj\Debug\About.dll
+E:\Aula\primeri.csharp.miniproject01\MP01\About\obj\Debug\About.pdb
