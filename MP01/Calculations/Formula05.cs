@@ -2,6 +2,8 @@
 
 namespace Calculations
 		{
+	/// <summary>
+	/// Клас за формула за канален изкоп. ( Формула 5 )</summary>
 			public class Formula05
 			{
 				private Colors.ForCLI _cl = new Colors.ForCLI ();
@@ -69,7 +71,7 @@ namespace Calculations
 					_cl.Default (); 	Console.WriteLine (" - kanalen izkop.");
 
 					_cl.Command (); 	Console.Write ("parametri: ");
-					_cl.Default (); 	Console.WriteLine (" a, h i l\n");
+					_cl.Default (); 	Console.WriteLine (" a, b, h i l\n");
 
 					_cl.Command (); 	Console.Write ("a i b");
 					_cl.Default (); 	Console.WriteLine (" - shirina na profila i visochina.");

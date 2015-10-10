@@ -2,11 +2,12 @@
 
 namespace Calculations
 {
+	/// <summary>
+	/// Клас за формула за обикновенна строителна яма. ( Формула 1 )</summary>
 	public class Formula01
 	{
 		//Библиотеки
 		private Colors.ForCLI _c = new Colors.ForCLI ();
-
 
 		public Formula01 ()  // Формула за обикновенна строителна яма
 		{
