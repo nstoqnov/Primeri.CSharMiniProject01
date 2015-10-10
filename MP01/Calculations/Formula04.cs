@@ -2,15 +2,14 @@
 
 namespace Calculations
 {
-	public class Formula03
+	public class Formula04
 	{
 		private Colors.ForCLI _cl = new Colors.ForCLI ();
 
-
-		public Formula03 ()
+		public Formula04 ()
 		{
 		}
-		//Формула за изпъкнал ъгъл
+		//Формула за страничен ъгъл
 		public void calc ( string _input )
 		{
 			try{
@@ -26,7 +25,7 @@ namespace Calculations
 					double result = 0;
 					if ( runCalculate  (param, out result) )
 					{
-						_cl.Default (); 	Console.Write ("Obemut na izpuknaliqt ugul e: ");
+						_cl.Default (); 	Console.Write ("Obemut na stranichniq ugul e ");
 						_cl.Result ();  	Console.Write (result.ToString ("N2") );
 						_cl.Default (); 	Console.WriteLine ( " m3\n" );
 
@@ -42,17 +41,16 @@ namespace Calculations
 
 
 		}
-	
 
 		private bool runCalculate (string[] _param, out double _result)
 		{
 			try
 			{
 				double a = 0; Double.TryParse ( _param[1], out a);
-				double b = 0; Double.TryParse ( _param[2], out b);
-				double h = 0; Double.TryParse ( _param[3], out h);
+				double h = 0; Double.TryParse ( _param[2], out h);
+				double l = 0; Double.TryParse ( _param[3], out l);
 
-				_result = 2 * a * b * h / 3;
+				_result = ( a * h / 2) * l;
 
 				return true;
 			}catch{
@@ -64,20 +62,19 @@ namespace Calculations
 			return false;
 		}
 
-
 		private void help ()
 		{
-			_cl.Result ();		Console.Write ("[iugul]");
-			_cl.Default (); 	Console.WriteLine (" - izpuknal ugul.");
+			_cl.Result ();		Console.Write ("[sugul]");
+			_cl.Default (); 	Console.WriteLine (" - stranichen ugul.");
 
 			_cl.Command (); 	Console.Write ("parametri: ");
-			_cl.Default (); 	Console.WriteLine (" a, b i h\n");
+			_cl.Default (); 	Console.WriteLine (" a, h i l\n");
 
-			_cl.Command (); 	Console.Write ("a i b");
-			_cl.Default (); 	Console.WriteLine (" - shirina i duljina.");
+			_cl.Command (); 	Console.Write ("a i h");
+			_cl.Default (); 	Console.WriteLine (" - shirina na profila i visochina.");
 
 			_cl.Command (); 	Console.Write ("h");
-			_cl.Default (); 	Console.WriteLine (" - visochina\n");
+			_cl.Default (); 	Console.WriteLine (" - duljina\n");
 		}
 	}
 }

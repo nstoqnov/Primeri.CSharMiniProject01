@@ -34,6 +34,8 @@ namespace UserInput
 				if (_command.ToLower().Contains ( "qma" ) )	 	_calc.F01.calc ( _command );
 				if (_command.ToLower().Contains ( "vugul" ) )	_calc.F02.calc ( _command );
 				if (_command.ToLower().Contains ( "iugul" ) )	_calc.F03.calc ( _command );
+				if (_command.ToLower().Contains ( "sugul" ) )	_calc.F04.calc ( _command );
+				if (_command.ToLower().Contains ( "kizkop" ) )	_calc.F05.calc ( _command );
 
 				if (_command.ToLower().Contains ( "pomosht" ) ||
 					_command.ToLower() == "p"  )				_calc.commands ();

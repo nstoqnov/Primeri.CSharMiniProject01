@@ -24,7 +24,7 @@ namespace Calculations
 					double result = 0;
 					if ( runCalculate  (param, out result) )
 					{
-						_cl.Default (); 	Console.Write ("Obemut na vdlubnatiqt ugul e ");
+						_cl.Default (); 	Console.Write ("Obemut na vdlubnatiqt ugul e: ");
 						_cl.Result ();  	Console.Write (result.ToString ("N2") );
 						_cl.Default (); 	Console.WriteLine ( " m3\n" );
 
